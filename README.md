@@ -26,10 +26,6 @@ this repository is used to save documents of learning *html*
 
 add **quote** to value when assign it to align
 
-
-
-2.html insert link and picture
-
 # reference
 
 `&lt;` >
