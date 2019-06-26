@@ -26,6 +26,10 @@ this repository is used to save documents of learning *html*
 
 add **quote** to value when assign it to align
 
+---
+
+starbuzz.html: a web for a cafeteria
+
 # reference
 
 `&lt;` >
