@@ -16,6 +16,14 @@ this repository is used to save documents of learning *html*
 
 `<hr/>` cutline
 
+`<em>text</em>` 斜体
+
+`<!--注释-->`
+
+
+
+---
+
 add **quote** to value when assign it to align
 
 
