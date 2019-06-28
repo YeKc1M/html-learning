@@ -17,7 +17,7 @@ font-family: sans-serif;
 
 <p>this is used for note?</p>
 
-<h1>chapter 1</h1>
+<h1 id="chapter1">chapter 1</h1>
 <img src="../../../ÓÎÏ·/ºÚ»ê3/Ñó´ÐÆïÊ¿.jpg" width="160" height="160">
 <p>this code is in page 39<br/>
 now, i want to test what &lt;em&gt;&lt;/em&gt; is like
@@ -68,8 +68,29 @@ shaving products.</dd>
 <h2>element strong</h2>
 <p>use to <strong>emphasize</strong></p>
 
+<h1>chapter 4</h1>
+<h2>add title to hyperlink</h2>
+<a href="https://www.baidu.com" 
+title="this is the titile of the hyberlink">this is a hyperlink</a>
+<p>&lt;a href=&quot;hyperlink&quot; title=&quot;title&quot;
+&gt;text&lt;/a&gt;</p>
+<p>actually you can add title to any element<br>
+to picture<img src="../../../ÓÎÏ·/ºÚ»ê3/Ñó´ÐÆïÊ¿.jpg" width="160" 
+height="160" title="Ñó´ÐÆïÊ¿"><br>
+to paragraph<p title="paragraph">this is a paragraph</p><br>
+to quote<q title="quote">quote</q>
+<blockquote title="blockquote">blockquote</blockquote></p>
+<h2>element a's id</h2>
+<p>id must be unique<br>
+<a href="headfirst.html#chapter1">goto chapter1</a><br>
+<a href="chapter3/segway USA.html#routine">goto another file</a><br>
+&lt;a href=&quot;url/location#id&gt;text&lt;/a&gt;</p>
+<h2>link to a new window</h2>
+<p>use attribute target, assign value &quot;_blank&quot; to it<br>
+<a href="https://www.baidu.com" target="_blank">go to baidu</a></p>
+
 <h1>reference</h1>
-<p><ul><li>&amp;amp; - &amp</li>
+<p><ul title="reference"><li>&amp;amp; - &amp</li>
 <li>&amp;lt; - &lt;</li><li>&amp;gt; - &gt;</li>
 <li>&amp;quot; - &quot;</li>
 </ul></p>
