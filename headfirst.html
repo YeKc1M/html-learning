@@ -1,4 +1,5 @@
-<html>
+<!doctype html>
+<html lang="en">
 
 <head>
 <title>Head First</title>
@@ -18,7 +19,8 @@ font-family: sans-serif;
 <p>this is used for note?</p>
 
 <h1 id="chapter1">chapter 1</h1>
-<img src="../../../ÓÎÏ·/ºÚ»ê3/Ñó´ÐÆïÊ¿.jpg" width="160" height="160">
+<img src="../../../ÓÎÏ·/ºÚ»ê3/Ñó´ÐÆïÊ¿.jpg" alt="chapter 1 picture"
+width="160" height="160">
 <p>this code is in page 39<br/>
 now, i want to test what &lt;em&gt;&lt;/em&gt; is like
 <em>this text is inside em</em><br/>
@@ -35,33 +37,36 @@ used to emphasize text. use css to show inclined letter</p>
 <h2>element q</h2>
 <p>&lt;q&gt;text&lt;/q&gt; means <q>text</q></p>
 <h3>element blockquote</h3>
-<p>it works like this<blockquote>blockquote text</blockquote>end</p>
+<p>it works like this</p><blockquote>blockquote text</blockquote>
+<p>end, this seems that blockquote have to be in a new parargraph 
+without element p</p>
 <h3>notice</h3>
 <p>element em is used for emphasizing, not for italic<br>
 use css for italic instead</p>
 <h2>element br</h2>
-jump to next line
+<p>jump to next line</p>
 <h2>element li</h2>
 <p>element li to make list<br>
 &lt;li&gt;text&lt;/li&gt;</p>
-this is a list:<li>first</li><li>second</li><li>third</li>
+<p>this is a list:</p><ul><li>first</li><li>second</li><li>third</li></ul>
 <h3>element ol</h3>
 <p>add outside li to make a sequantial list<br>
 &lt;ol&gt;&lt;li&gt;list elements&lt;/li&gt;&lt;/ol&gt;</p>
-<p>this is a sequantial list:
-<ol><li>first</li><li>second</li><li>third</li></ol></p>
+<p>this is a sequantial list:</p>
+<ol><li>first</li><li>second</li><li>third</li></ol>
 <p>ordered list - ol, unordered list - ul, list item - li<br>
 ol, ul can contain only li(no text allowed)</p>
 <h3>element dl</h3>
-<p>defined list:
+<p>defined list:</p>
 <dl>
 <dt>Burma Shave Signs</dt>
 <dd>Road signs common in the US in the 1920s and 1930s advertising
 shaving products.</dd>
 <dt>Route 66</dt>
-<dd>Most famous road in the US high way system</dd></dl></p>
+<dd>Most famous road in the US high way system</dd></dl>
 <p>&lt;dl&gt;<br>&lt;dt&gt;defined terms[i]&lt;/dt&gt;
 &lt;dd&gt;defined descriptions[i]&lt;/dd&gt;<br>&lt;/dl&gt;</p>
+<p><strong>the list is in a new paragraph without element p</strong></p>
 <h2>element code</h2>
 <code>int a=0;<br>a++;</code>
 <h2>element time</h2>
@@ -78,13 +83,13 @@ title="this is the titile of the hyberlink">this is a hyperlink</a>
 <p>actually you can add title to any element<br>
 to picture<img src="../../../ÓÎÏ·/ºÚ»ê3/Ñó´ÐÆïÊ¿.jpg" width="160" 
 height="160" title="Ñó´ÐÆïÊ¿"><br>
-to paragraph<p title="paragraph">this is a paragraph</p><br>
-to quote<q title="quote">quote</q>
-<blockquote title="blockquote">blockquote</blockquote></p>
+to paragraph<p title="paragraph">this is a paragraph</p>
+<p>to quote<q title="quote">quote</q></p>
+<blockquote title="blockquote">blockquote</blockquote>
 <h2>element a's id</h2>
 <p>id must be unique<br>
 <a href="headfirst.html#chapter1">goto chapter1</a><br>
-<a href="chapter3/segway USA.html#routine">goto another file</a><br>
+<a href="chapter3/segway%20USA.html#routine">goto another file</a><br>
 &lt;a href=&quot;url/location#id&gt;text&lt;/a&gt;</p>
 <h2>link to a new window</h2>
 <p>use attribute target, assign value &quot;_blank&quot; to it<br>
@@ -105,11 +110,30 @@ target="_blank">
 <img src="../../../ÓÎÏ·/ºÚ»ê3/Ñó´ÐÆïÊ¿.jpg" width="100" height="100" 
 alt="Ñó´ÐÆïÊ¿"></a></p>
 
+<h1>chapter 6 html5</h1>
+<h2>doctype</h2>
+<p>&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot; 
+&quot;http://www.w3.org/TR/html4/strict.dtd&quot;&gt;<br>
+character ! to show that it is <strong>different</strong> from element<br>
+html to show the root(first) element<br>
+PUBLIC to show the standard is public<br>
+the quote to show the version and is written in English<br>
+the quote to show file of standard</p>
+<p><strong>doctype should be put at the top of the file</strong></p>
+<h3>HTML5 doctype</h3>
+<p>&lt;!doctype html&gt;</p>
+<h2>W3C debug</h2>
+<p>go to <a href="http://validator.w3.org" target="_blank" title="check 
+errors">find your error in your html file</a></p>
+
+
 <h1>reference</h1>
-<p><ul title="reference"><li>&amp;amp; - &amp</li>
+<ul title="reference"><li>&amp;amp; - &amp;</li>
 <li>&amp;lt; - &lt;</li><li>&amp;gt; - &gt;</li>
 <li>&amp;quot; - &quot;</li>
-</ul></p>
+<li>in url <strong>space</strong> should be replaced with <strong>%20
+</strong></li>
+</ul>
 
 </body>
 
