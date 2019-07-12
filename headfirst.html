@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+<meta charset="gbk">
 <title>Head First</title>
 
 <style>
@@ -11,7 +12,11 @@ margin-right:25%;
 border: 2px dotted black;
 padding: 10px 10px 10px 10px;
 font-family: sans-serif;
-}</style>
+}
+p{
+background-color:yellow;
+border: 1px solid gray}
+</style>
 </head>
 
 <body>
@@ -92,7 +97,7 @@ to paragraph<p title="paragraph">this is a paragraph</p>
 <a href="chapter3/segway%20USA.html#routine">goto another file</a><br>
 &lt;a href=&quot;url/location#id&gt;text&lt;/a&gt;</p>
 <h2>link to a new window</h2>
-<p>use attribute target, assign value &quot;_blank&quot; to it<br>
+<p>use attribute <em>target</em>, assign value &quot;_blank&quot; to it<br>
 <a href="https://www.baidu.com" target="_blank">go to baidu</a></p>
 
 <h1>chapter 5 element img</h1>
@@ -125,7 +130,24 @@ the quote to show file of standard</p>
 <h2>W3C debug</h2>
 <p>go to <a href="http://validator.w3.org" target="_blank" title="check 
 errors">find your error in your html file</a></p>
+<h2>meta</h2>
+<p>use element meta charset attribute to choose decoding way 
+for ex, UTF-8, GBK...<br>
+meta is put in <em>head</em> block</p>
 
+<h1>chapter 6 css</h1>
+<p>in css, no &lt;&gt; are needed.</p>
+<h2>modify element <em>p</em></h2>
+<p>use background-color to set background color<br>
+put into <em>head</em> block <em>style</em> like this:<br>
+p{background-color:red;}<br>
+<strong>; is needed</strong></p>
+<p>use <em>border</em> to set the border of paragraph<br>
+border: 1px solid gray;<br>
+<em>1px</em> is the width of the border<br>
+<em>solid</em> is the attribute of the border. null, dotted, solid<br>
+<em>gray</em> is the color of the paragraph</p>
+<h2>modify element <em>h</em></h2>
 
 <h1>reference</h1>
 <ul title="reference"><li>&amp;amp; - &amp;</li>
