@@ -4,6 +4,7 @@
 <head>
 <meta charset="gbk">
 <title>Head First</title>
+<link type="text/css" rel="stylesheet" href="headfirst.css">
 
 <style>
 body{
@@ -15,7 +16,13 @@ font-family: sans-serif;
 }
 p{
 background-color:yellow;
-border: 1px solid gray}
+border: 1px solid gray;
+color:blue;}
+h1,h2{
+font-family:sans-serif;
+color:gray;}
+h1{border-bottom: 1px solid black;}
+h2{text-decoration: underline;}
 </style>
 </head>
 
@@ -144,10 +151,27 @@ p{background-color:red;}<br>
 <strong>; is needed</strong></p>
 <p>use <em>border</em> to set the border of paragraph<br>
 border: 1px solid gray;<br>
+color:maroon;<br>
 <em>1px</em> is the width of the border<br>
 <em>solid</em> is the attribute of the border. null, dotted, solid<br>
 <em>gray</em> is the color of the paragraph</p>
+<p>use <em>color</em> to set color of font</p>
 <h2>modify element <em>h</em></h2>
+<p>modify <em>h1</em> and <em>h2</em><br>
+h1,h2{font-family:san-serif;<br>
+color:gray;<br>
+border-bottom: 1px solid black;}<br>
+use <em>border-bottom</em> to add a line under the header</p>
+<p>we can still add unique attributes to each header</p>
+<p>the value <em>underline</em> in <em>text-decoration</em> can make the text be underlined<br>
+but the line ends with the text ending</p>
+<h2>create a css file</h2>
+<p>it contains the styles you need<br>
+but in css file, there is no <em>style</em></p>
+<p>use element <em>link</em> to link to a external css file<br>
+and it's ouside <em>style</em><br>
+&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;filename.css&quot;&gt;<br>
+attribute <em>rel</em> explains the relationship between the external file and this file</p>
 
 <h1>reference</h1>
 <ul title="reference"><li>&amp;amp; - &amp;</li>
