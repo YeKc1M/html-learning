@@ -1,4 +1,9 @@
 em{
-text-decoration: underline;}
+text-decoration: underline;
+}
+em.term{
+font-family:serif;
+}
 strong{
-color:red;}
+color:red;
+}
