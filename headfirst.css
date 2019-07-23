@@ -1,12 +1,35 @@
+
+
+body{
+margin-left:25%;
+margin-right:25%;
+border: 2px dotted black;
+padding: 10px 10px 10px 10px;
+font-family: sans-serif;
+line-height: 1.4em;
+}
+
+h1,h2,h3{
+font-family:sans-serif;
+color:gray;
+}
+h1{border-bottom: 1px solid black;
+}
+h2{text-decoration: underline;
+}
+
+p{
+background-color:yellow;
+border: 1px solid gray;
+}
+
 em{
 text-decoration: underline;
 }
 em.term{
 font-family:serif;
+color:blue;
 }
 strong{
 color:red;
-}
-a{
-color:orange;
 }
