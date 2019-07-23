@@ -1,0 +1,30 @@
+body{
+margin-left:25%;
+margin-right:25%;
+border:2px dotted black;
+padding: 10px 10px 10px 10px;
+}
+
+p.fontsize{
+font-size:20px;
+}
+p.color{
+color:fuchsia;
+}
+p.fontweight{
+font-weight:bold;
+}
+p.fontfamily{
+font-family:impact;
+}
+p.textdecoration{
+text-decoration:line-through;
+}
+p.multiplefont{
+font-family: Verdana, Geneva, Arial, sans-serif;
+}
+
+em.term{
+font-family: serif;
+color: blue;
+}
