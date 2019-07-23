@@ -12,16 +12,45 @@
 <p class="fontfamily">font-family. Andale Mono, Arial, Arial Black, Comic Sans,
 Courier New, Georgia, Impact, Times New Roman, Trebuchet MS, Verdana</p>
 <p class="fontsize">font-size. this paragraph's font size has been changed</p>
-<p class="color">color. black,blue,fuchsia,gray,green,lime,marron,navy,olve,purple,red
+<p class="color">color. aqua,black,blue,fuchsia,gray,green,lime,marron,navy,olve,purple,red
 silver,teal,white,yellow</p>
 <p class="fontweight">font-weight. light,normal,bold,bolder</p>
 <p class="textdecoration">text-decoration. none, underline, overline, line-through</p>
 <p class="multiplefont">p.multiplefont{font-family:Verdana, Geneva,Arial,sans-serif;} means<br>
 if the first cannot be used, use second. if second cannot be used, use third...</p>
-</body>
 
 <h2>web font</h2>
 <p>use <em class="term">@font-face</em> rule<br>
 use file <strong>xxx.woff</strong> to save your web font on the server</p>
+<p>@font-face{<br>
+font-family: fontfamilyname;<br>
+src:url(url)<br>
+}</p>
+<p><a href="http://www.fontsquirrel.com" target="_blank" title="font squirrel">click to get some free font styles</a></p>
+
+<h2>font size</h2>
+<p><em class="term">font-size</em> sets the height of the font</p>
+<p>font-size can be like 150%, compared to the parent element<br>
+<em class="term">em</em>(not element em) is equal to 100%<br>
+xx-small,x-small,small,medium,large,x-large,xx-large</p>
+<p>use <em class="term">em</em> or <em>percentage</em> to set other size so that the browser can change them when user change the size of the font</p>
+
+<h2>font-style</h2>
+<p class="italicp">font-style:italic;</p>
+<p class="obliquep">font-style:oblique;</p>
+
+<h2>color</h2>
+<p>you can use <em class="term">rgb(?%, ?%, ?%);</em> to set color or<br>
+<em class="term">rgb(?,?,?);</em> ? is between 0 and 255</p>
+<p><a href="https://en.wikipedia.org/wiki/Web_colors" target="_blank" title="search rgb">click to find rgb</a> but you need a VPN first(wiki)</p>
+<p>there are also <em class="term">border-color</em> and <em class="term">background-color</em></p>
+
+<h2>text-decoration</h2>
+<p class="doubleline">text-decoration:underline overline;</p>
+<p>we can use <del>element <em class="term">del</em> to indicate this is to be deleted</del> and <ins><em class="term">ins</em> to indicate this is to be inserted</ins></p>
+<p>we usually use <em class="term">border-bottom</em> to set the header with endless underline</p>
+
+
+</body>
 
 </html>

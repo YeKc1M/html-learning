@@ -1,8 +1,17 @@
+@font-face{
+font-family: "Emblema One";
+src:url("https://code.z01.com/font/ZoomlaXingtiJ6.woff");
+}
+
 body{
 margin-left:25%;
 margin-right:25%;
 border:2px dotted black;
 padding: 10px 10px 10px 10px;
+}
+
+h1,h2{
+font-family:"Emblema One";
 }
 
 p.fontsize{
@@ -22,6 +31,15 @@ text-decoration:line-through;
 }
 p.multiplefont{
 font-family: Verdana, Geneva, Arial, sans-serif;
+}
+p.italicp{
+font-style:italic;
+}
+p.obliquep{
+font-style:oblique;
+}
+p.doubleline{
+text-decoration:underline overline;
 }
 
 em.term{
