@@ -1,4 +1,14 @@
-
+.guarantee{
+border-color: black;
+border-width: 1px;
+border-style: solid;
+background-color: #a7cece;
+padding: 25px;
+margin: 30px;
+line-height:1.9em;
+color:#444;
+background-image: url(../../../ÓÎÏ·/ºÚ»ê3/Ñó´ÐÆïÊ¿.jpg);
+}
 
 body{
 margin-left:25%;
@@ -20,7 +30,7 @@ h2{text-decoration: underline;
 
 p{
 background-color:yellow;
-border: 1px solid gray;
+border: 1px dotted gray;
 }
 
 em{
