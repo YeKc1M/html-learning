@@ -35,6 +35,11 @@ background-color:yellow;
 border: 1px dotted gray;
 }
 
+code{
+line-height: 1em;
+color: blue;
+}
+
 em{
 text-decoration: underline;
 }

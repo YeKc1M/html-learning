@@ -32,3 +32,8 @@ border-top-left-radius:15px;
 border-style:solid;
 padding:5px;
 }
+
+#idselector{
+border-top:dotted;
+border-color:red;
+}

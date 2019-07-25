@@ -213,7 +213,27 @@ name, rgb, #xxxxxx</p>
 <p><em class="term">border-radius</em>: ?px/?em(compared to the font)<br>
 can also set border-top/bottom-left/right-radius<br>
 <a href="chapter8/chapter8.html#border_radius" target="_blank" title="border radius">click to see border radius examples</a></p>
-
+<h2>attribute id</h2>
+<p>when the class is used only once, we use <em class="term">id</em> instead of class</p>
+<p>an element can only have one id, and id should not contain blankspace or other special characters<br>
+an id can only be assigned once<br>
+an element can be assigned an id with multiple classes</p>
+<p>it work like this<br>
+<code>(element)#id{attr...;}</code><br>
+<a href="chapter8/chapter8.html#idselector" target="_blank" title="id selector">click to see id selector example</a></p>
+<h2>style sheet</h2>
+<p>the style sheet will cover the style sheet before it</p>
+<h3>attribute media</h3>
+<p><em class="term">media</em> to adjust the style of the page to adapt to PC, laptop...</p>
+<p><code>media="screen and (max-device-width: 480px)"</code> <em>screen</em>: equipment type. <em>(max-device-width)</em>: screen width should be no more than 480px<br>
+<code>media="print"</code> media type: print</p>
+<p><code>(orientation: landscape/portrait)</code> to set orientation</code></p>
+<h3>@media rule</h3>
+<p><code>@media screen and (min-device-width:481px){<br>
+#guarantee{<br>
+margin-right: 250px;<br>
+}</code><br>
+<code>#guaranee...</code> if device width is more than 480px, use this rule</p>
 
 <h1>reference</h1>
 <ul title="reference"><li>&amp;amp; - &amp;</li>
