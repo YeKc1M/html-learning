@@ -1,3 +1,13 @@
+#chapter9{
+border-color:black;
+border-style:solid;
+padding:5px 5px 5px 5px;
+}
+
+#chapter9 h1{
+color: #d12c47;
+}
+
 .guarantee{
 border-color: black;
 border-width: 1px;
