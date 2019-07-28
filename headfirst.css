@@ -21,6 +21,12 @@ background-image: url(../../../ÓÎÏ·/ºÚ»ê3/Ñó´ÐÆïÊ¿.jpg);
 background-repeat: no-repeat;
 background-position: top left;
 }
+.cd{
+font-style:italic;
+}
+.artist{
+font-weight:bold;
+}
 
 body{
 margin-left:25%;
@@ -59,4 +65,20 @@ color:blue;
 }
 strong{
 color:red;
+}
+
+a#bilibili:link{
+color:green;
+}
+a#bilibili:visited{
+color:red;
+}
+a#bilibili:hover{
+color:yellow;
+}
+#testPseudoClass:last-child{
+color:red;
+}
+p:first-child{
+color:blue;
 }
