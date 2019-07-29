@@ -1,11 +1,7 @@
-#chapter9{
-border-color:black;
-border-style:solid;
-padding:5px 5px 5px 5px;
-}
-
-#chapter9 h1{
-color: #d12c47;
+#picture{
+float:right;
+border:white dotted;
+background: gray;
 }
 
 .guarantee{
@@ -81,4 +77,20 @@ color:red;
 }
 p:first-child{
 color:blue;
+}
+
+#chapter9{
+border-color:black;
+border-style:solid;
+padding:5px 5px 5px 5px;
+margin:10px 0px 10px 0px;
+}
+
+#chapter9 h1{
+color: #d12c47;
+}
+
+#chapter10{
+border-style: solid;
+margin:10px 0px 10px 0px;
 }
