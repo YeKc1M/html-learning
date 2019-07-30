@@ -283,15 +283,42 @@ a more complex situation<br>
 
 <div id="chapter10">
 <h1>chapter 10</h1>
+<h2>liquid layout</h2>
 <p id="picture"><img src="../../../ÓÎÏ·/ºÚ»ê3/Ñó´ÐÆïÊ¿.jpg" alt="union knight" title="union knight" width="160"></p>
 <p>use <em class="term">float</em> to set the location of the block<br>
 right xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx test<br>
 the picture will not cover the text</p>
 <p><a href="chapter10/chapter10.html" target="_blank" title="chapter10 example">click to see example</a></p>
 <p>css only allows left-float or right-float</p>
-<h2>element clear</h2>
+<h3>element clear</h3>
 <p>use element <em class="term">clear</em> to solve the problem of covering<br>
-<code>clear: right</code> to disable the right floating context</p>
+<code>clear: right;</code> to disable the right floating context</p>
+<h2>frozen layout</h2>
+<p>set the overall a fixed width</p>
+<h2>Jello layout</h2>
+<p>set overall content a fixed width in center<br>
+<code>margin-left:auto;margin-right:auto</code></p>
+<h2>absolute positioning</h2>
+<p>
+<code>position:absolute;</code>to change static positioning to absolute positioning<br>
+value <em class="term">fixed</em> sets the element's position according to the browser instead of page, so that it will never change its position<br>
+value <em class="term">relative</em> applies to more complex positioning<br>
+<code>top:100px;</code>100 px from top<br>
+<code>right: 200px;</code> 200px from right<br>
+can also use <em class="term">left</em> and <em class="term">bottom</em> instead
+</p>
+<p>
+the block absolute positioned will be deleted from float, and position according to its settings
+</p>
+<p>
+attribute <em class="term">z-index</em> sets the layer of absolute positioning element<br>
+the larger z-index is, the closer the element will be with you
+</p>
+<p>
+cause the absolute positioning element is deleted from float, the inline element in the float will not know its position, so that
+<strong>the inline element in the float will not surround the absolute positioning element, it may be covered by absolute positioning element and the attribute <em class="term">clear</em> will not work
+</strong>
+</p>
 </div>
 
 <h1>reference</h1>
