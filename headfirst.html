@@ -5,7 +5,6 @@
 <meta charset="gbk">
 <title>Head First</title>
 <link type="text/css" rel="stylesheet" href="headfirst.css">
-
 </head>
 
 <body>
@@ -318,6 +317,20 @@ the larger z-index is, the closer the element will be with you
 cause the absolute positioning element is deleted from float, the inline element in the float will not know its position, so that
 <strong>the inline element in the float will not surround the absolute positioning element, it may be covered by absolute positioning element and the attribute <em class="term">clear</em> will not work
 </strong>
+</p>
+<h2>样式表</h2>
+<p>
+每个表格放置块元素，所以单个内联元素要用div包装
+</p>
+<h3>创建样式表</h3>
+<p>
+整个表格创建一个div（设置属性<code>display: table;</code>）<br>
+每一行创建一个div（设置属性<code>display: table-row</code>）<br>
+行中的列创建一个div（设置属性<code>display:table-cell;</code>）
+</p>
+<p>
+<em class="term">border-spacing</em>设置表格中元素的外间距<br>
+<em class="term">vertical-align</em>设置水平对齐方式，top为顶端对齐，bottom为底端对齐
 </p>
 </div>
 
