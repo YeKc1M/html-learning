@@ -63,6 +63,12 @@ strong{
 color:red;
 }
 
+#fixedSidebar{
+position:fixed;
+left:0px;
+top:100px;
+}
+
 a#bilibili:link{
 color:green;
 }

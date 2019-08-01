@@ -9,6 +9,13 @@
 
 <body>
 
+<div id="fixedSidebar">
+	<p>
+		<a href="headfirst.html#checkHTML" title="check html file">go to check your html file</a><br>
+		<a href="headfirst.html#checkCSS" title="check css file">go to check your css file</a>
+	</p>
+</div>
+
 <p>this is used for note?</p>
 
 <h1 id="chapter1">chapter 1</h1>
@@ -304,7 +311,8 @@ value <em class="term">fixed</em> sets the element's position according to the b
 value <em class="term">relative</em> applies to more complex positioning<br>
 <code>top:100px;</code>100 px from top<br>
 <code>right: 200px;</code> 200px from right<br>
-can also use <em class="term">left</em> and <em class="term">bottom</em> instead
+can also use <em class="term">left</em> and <em class="term">bottom</em> instead<br>
+这些值能为负
 </p>
 <p>
 the block absolute positioned will be deleted from float, and position according to its settings
@@ -318,7 +326,10 @@ cause the absolute positioning element is deleted from float, the inline element
 <strong>the inline element in the float will not surround the absolute positioning element, it may be covered by absolute positioning element and the attribute <em class="term">clear</em> will not work
 </strong>
 </p>
-<h2>样式表</h2>
+<p>
+	如果一个绝对定位元素嵌套在另一个定位元素中，这个元素就会相对于外包含元素定位
+</p>
+<h2>css样式表</h2>
 <p>
 每个表格放置块元素，所以单个内联元素要用div包装
 </p>
@@ -329,8 +340,12 @@ cause the absolute positioning element is deleted from float, the inline element
 行中的列创建一个div（设置属性<code>display:table-cell;</code>）
 </p>
 <p>
-<em class="term">border-spacing</em>设置表格中元素的外间距<br>
+<em class="term">border-spacing</em>设置表格中元素的外间距，此间距不与maigin合并<br>
 <em class="term">vertical-align</em>设置水平对齐方式，top为顶端对齐，bottom为底端对齐
+</p>
+<h2>fixed positioning</h2>
+<p>
+无论如何移动页面，这一块都不会移动
 </p>
 </div>
 
@@ -341,10 +356,9 @@ cause the absolute positioning element is deleted from float, the inline element
 <li>in url <strong>space</strong> should be replaced with <strong>%20
 </strong></li>
 </ul>
-<p><a href="headfirst.html#checkCSS">goto check css</a><br>
-<a href="headfirst.html#checkHTML">goto check html</a></p>
 <p>when two inline elements are in a row, the distance between them is total adding of two margins<br>
-when two inline elements are in a colomn, the distance between them is maximum of the two margins</p>
+when two inline elements are in a colomn, the distance between them is maximum of the two margins
+</p>
 
 </body>
 
