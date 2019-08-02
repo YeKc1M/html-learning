@@ -361,10 +361,58 @@ cause the absolute positioning element is deleted from float, the inline element
 		element <em class="term">section</em>主题性内容分组<br>
 		element <em class="term">video</em> 为页面增加视频媒体
 	</p>
-	<h1>time</h1>
+	<h2>time</h2>
 	<p>
 		若干元素内容没有采用官方Internet日期/时间格式来写，必须有属性datetime<br>
 		如果使用datetime指定一个日期，文本可以是与日期相关的任何，如yesterday或now
+	</p>
+	<h2>nav</h2>
+	<h3>使用css创建导航</h3>
+	<ul class="navi">
+		<li><a href="https://www.baidu.com">百度</a></li>
+		<li><a href="">空白</a></li>
+		<li><a href="">空白</a></li>
+	</ul>
+	<p>
+		使用ul元素创建导航栏，设置<code>list-style-type: none;</code><br>
+		设置ul中的li <code>display: inline;</code>
+	</p>
+	<h3>使用nav元素</h3>
+	<nav>
+		<ul>
+			<li><a href="https://www.baidu.com">百度</a></li>
+			<li><a href="">空白</a></li>
+			<li><a href="">空白</a></li>
+		</ul>
+	</nav>
+	<p>
+		设置nav中的ul和li
+	</p>
+	<h2>video</h2>
+	<p>
+		video添加视频<br>
+		<video controls autoplay width="400" src="深蓝之星.mp4" poster="洋葱骑士.jpg"></video><br>
+		<code>&lt;video controls autoplay width="250" src="深蓝之星.mp4"&gt;&lt;/video&gt;</code>
+	</p>
+	<p>
+		<code>control</code>提供播放、暂停、调节音量等组件<br>
+		<code>autoplay</code>加载完成后自动播放（chrome似乎不支持，Edge能够成功）<br>
+		<code>poster="src"</code>视频未播放时，显示src所指的图像<br>
+		<code>loop</code>决定播放之后是否自动重新播放<br>
+		<code>preload</code>决定是否在播放前下载视频，可设置为none/metadata/auto...<br>
+		<code>&lt;video ... &lt;source src=&quotsrc1&quot;&gt;<br>
+		&lt;source src="src2"&gt;...<br>
+		&lt;p&gt;sorry, your browser doesn't support the video element&lt;/p&gt;&lt;/video&gt;</code>设置使用多个src<br>
+		在所有source后添加<code>&lt;object&gt;...&lt;/object&gt;</code>使用flash播放
+	</p>
+	<h2>其他html5元素</h2>		
+	<p>
+		<element class="term">mark</em>用于突出显示某些文本（记号笔）<br>
+		<element class="term">audio</em>包含声音内容<br>
+		<element class="term">progress</em>显示某些任务完成进度<br>
+		<element class="term">meter</em>显示某个范围的度量，如一个温度计<br>
+		<element class="term">canvas</em>显示JS绘制的图像和动画<br>
+		<element class="term">figure</em>定义类似照片、图表甚至代码清单等独立的内容
 	</p>
 </div>
 

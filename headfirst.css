@@ -100,3 +100,21 @@ color: #d12c47;
 border-style: solid;
 margin:10px 0px 10px 0px;
 }
+
+ul.navi{
+margin: 10px 10px 0px 10px;
+list-style-type: none;
+padding: 5px 0px 5px 0px;
+}
+
+ul.navi li{
+display:inline;
+padding: 5px 10px 5px 10px;
+}
+
+nav ul{
+list-style-type:none;
+}
+nav ul li{
+display: inline;
+}
