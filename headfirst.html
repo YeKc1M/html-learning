@@ -416,6 +416,65 @@ cause the absolute positioning element is deleted from float, the inline element
 	</p>
 </div>
 
+<div id="chapter12">
+	<h1>chapter 12 表格</h1>
+		<h2>element table</h2>
+		<p>
+			一行<code>&lt;tr&gt;行内容&lt;/tr&gt;</code><br>
+			表头中的元素<code>&lt;th&gt;表头元素1&lt;/th&gt;</code><br>
+			单元格中的元素<code>&lt;td&gt;单元格元素&lt;/td&gt;</code>
+		</p>
+		<p>
+			使用元素<em class="term">caption</em>为表格增加标题
+		</p>
+			<h3>table css</h3>
+			<p>
+				<code>table{caption-side: bottom;}</code>将标题设置在表格下方
+			</p>
+			<p>
+				表格单元格没有外边距，设置border-spacing来设置单元格之间的间距<br>
+				<code>border-collapse: collapse;</code>将两个边框折叠为一个边框
+			</p>
+			<p>
+				使用伪类<code>element: nth-child(even/odd/2n/2n+1...)</code>设置符合条件的第n个兄弟
+			</p>
+		<h2>让table中一行跨行</h2>
+		<p>
+			<code>&lt;td rowspan=&quot;2&quot;&gt;表格单位内容&lt;/td&gt;</code><br>
+			跨列使用<code>colspan</code><br>
+			表格可以嵌套表格
+		</p>
+		<table>
+			<caption>
+				The cities I visited on my Segway'n USA travels
+			</caption>
+			<tr>
+				<th>City</th>
+				<th>Date</th>
+				<th>Temperature</th>
+				<th>Altitude</th>
+				<th>Population</th>
+				<th>Diner Rating</th>
+			</tr>
+			<tr>
+				<td>Walla Walla, WA</td>
+				<td>June 15th</td>
+				<td>75</td>
+				<td>1024 ft</td>
+				<td>29686</td>
+				<td>4/5</td>
+			</tr>
+			<tr>
+				<td>Magic City, ID</td>
+				<td>June 25th</td>
+				<td>74</td>
+				<td>5312 ft</td>
+				<td>50</td>
+				<td>3/5</td>
+			</tr>
+		</table>
+</div>
+
 <h1>reference</h1>
 <ul title="reference"><li>&amp;amp; - &amp;</li>
 <li>&amp;lt; - &lt;</li><li>&amp;gt; - &gt;</li>

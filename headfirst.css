@@ -118,3 +118,7 @@ list-style-type:none;
 nav ul li{
 display: inline;
 }
+
+table{
+caption-side: bottom;
+}
