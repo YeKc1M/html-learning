@@ -497,7 +497,88 @@ cause the absolute positioning element is deleted from float, the inline element
 </div>
 
 <div id="chapter13">
-<h1>chapter13 实现交互<h1>
+<h1>chapter13 实现交互</h1>
+	<p>
+		<a href="chapter13/chapter13.html" target="_blank"><code>
+		&lt;form action=&quot;http://wichedlysmart.com/hfhtmlcss/contest.php&quot; method=&quot;POST&quot;&gt;<br>
+		&lt;p&gt;<br>type in your name to enter the contest&lt;br&gt;<br>
+		Firstname: &lt;input type=&quot;text&quot; name=&quot;firstname&quot; value=&quot;&quot;&gt;&lt;br&gt;<br>
+		Last name:&lt;input type=&quot;text&quot; name=&quot;lastname&quot; value=&quot;&quot;&gt;&lt;br&gt;<br>
+		&lt;input type=&quot;submit&quot;&gt;<br>
+		&lt;/p&gt;<br>
+		&lt;/form&gt;
+		</code><br>
+		click to see example</a>
+	</p>
+	<p>
+		<code>form</code>创建表单<br>
+		<code>input</code>创建输入控件
+	</p>
+	<h2>form</h2>
+		<p>
+			<code>action</code>包含Web服务器的url<br>
+			<code>method</code>确定表单数据如何发送到服务器，最常用<code>POST</code>
+		</p>
+	<h2>input</h2>
+	<p>
+		<code>type=&quot;text&quot;</code>创建一个单行控件用于输入文本<br>
+		<code>name=&quot;name&quot;</code>服务器脚本会用到name<br>
+		<code>type=&quot;submit&quot;</code>创建一个按钮，提交表单到服务器脚本
+	</p>
+	<p>
+		单选钮输入radio<code>&lt;input type="radio&quot; name... value...&gt;</code><br>
+		复选框输入checkbox<code>&lt;input type="checkbox&quot; ...value=...&gt;</code>
+	</p>
+	<h2>textarea</h2>
+	<p>
+		创建一个多行的文本区<br>
+		<code>&lt;textarea name=&quot;...&quot; rows=&quot...&quot; cols=&quot;...&quot;&gt;初始本文&lt;/textarea&gt;</code><br>
+		<textarea name="comments" row="10" cols="48"></textarea>
+	</p>
+	<h2>select</h2>
+	<p>
+		创建一个菜单栏，可从一组选项做出选择<br>
+		<code>&lt;select name="characters"&gt;<br>
+		&lt;option value="value 1"&gt;value1&lt;/option&gt;<br>
+		&lt;option value="value 2"&gt;value2&lt;/option&gt;<br>
+		&lt;option value="value 3"&gt;value3&lt;/option&gt;<br>
+		&lt;/select&gt;</code><br>
+		<code>option</code>表示菜单项<br>
+		<select name="characters">
+			<option value="value 1">value1</option>
+			<option value="value 2">value2</option>
+			<option value="value 3">value3</option>
+		</select>
+	</p>
+	<p>
+		数字输入<br>
+		<code>&lt;input type=&quot;number&quot; min=&quot;0&quot; max=&quot;20&quot;&gt;</code><br>
+		<input type="number" min="0" max="20">
+	</p>
+	<p>
+		范围输入<br>
+		<code>&lt;input type=&quot;range&quot; min=&quot;0&quot; max=&quot;20&quot; step=&quot;5&quot;&gt;</code><br>
+		<input type="range" min="0" max="20" step="5">
+	</p>
+	<p>
+		颜色输入<br>
+		<code>&lt;input type=&quot;color&quot;&gt;</code><br>
+		<input type="color"><br>
+		日期输入<br>
+		<code>type=&quot;date&quot;</code><br>
+		<input type="date"><br>
+		email输入<br>
+		<code>type=&quot;email&quot;</code><br>
+		<input type="email"><br>
+		url输入<br>
+		<code>type=&quot;color&quot;</code><br>
+		<input type="url">
+	</p>
+	<p>
+		单选和多选会将value中的值传递给服务器<br>
+		在单选钮中增加属性checked使默认选中这个属性<br>
+		<strong>布尔属性不需要赋值</strong>
+	</p>
 </div>
 
 <h1>reference</h1>
