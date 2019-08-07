@@ -579,6 +579,49 @@ cause the absolute positioning element is deleted from float, the inline element
 		在单选钮中增加属性checked使默认选中这个属性<br>
 		<strong>布尔属性不需要赋值</strong>
 	</p>
+	<h2>POST & GET</h2>
+	<p>
+		POST和GET都将表单数据从浏览器发送到服务器<br>
+		POST打包表单变量，在后台把它们发送到服务器<br>
+		GET打包表单变量，并把这些数据追加到URL的最后，然后向服务器发送一个请求
+		<code>http://wickedlysmart.com/hfhtmlcss/contest.php?firstname=buckaroo&lastname=banzai</code>
+	</p>
+	<p>
+		GET：如果希望用户能对提交表单的结果页面加书签<br>
+		POST：GET在每次返回到这个书签时，都会重新提交这个订单<br>
+		使用了textarea，因为会发送大量数据
+	</p>
+	<h2>fieldset & legend</h2>
+	<p>
+		fieldset可以将公共元素组织在一起<br>
+		legend为这一组提供一个标签<br>
+		<code>&lt;fieldset&gt;<br>
+		&lt;legend&gt;Condiments&lt;/legend&gt;<br>
+		&lt;input type=&quot;checkbox&quot; name=&quot;spice&quot; value=&quot;salt&quot;&gt;Salt&lt;br&gt;<br>
+		&lt;input type=&quot;checkbox&quot; name=&quot;spice&quot; value=&quot;pepper&quot;&gt;Pepper&lt;br&gt;<br>
+		&lt;input type=&quot;checkbox&gt; name=&quot;spice&quot; value=&quot;garlic&quot;&gt;Garlic<br>
+		&lt;/fieldset&gt;</code>
+	</p>
+	<h2>其他</h2>
+	<p>
+		input password<br>
+		<code>&lt;input type=&quot;password&quot; name=&quot;...&quot;&gt;</code>
+	</p>
+	<p>
+		文件输入<br>
+		<code>&lt;input type=&quot;file&quot; name=&quot;doc&quot;&gt;</code>
+	</p>
+	<p>
+		多选菜单<br>
+		在select元素中增加布尔属性multiple
+	</p>
+	<p>
+		在input元素中添加<code>placeholder=&quot;...&quot;</code><br>
+		让使用者了解控件中希望输入的内容
+	</p>
+	<p>
+		required适用于所有控件（布尔属性），指示这个域是必须的
+	</p>
 </div>
 
 <h1>reference</h1>
