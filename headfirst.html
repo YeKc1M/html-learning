@@ -12,7 +12,32 @@
 <div id="fixedSidebar">
 	<p>
 		<a href="headfirst.html#checkHTML" title="check html file">go to check your html file</a><br>
-		<a href="headfirst.html#checkCSS" title="check css file">go to check your css file</a>
+		<a href="headfirst.html#checkCSS" title="check css file">go to check your css file</a><br>
+		<a href="headfirst.html#chapter1">chapter 1</a><br>
+		<a href="headfirst.html#chapter2">chapter 2</a><br>
+		hyperlink<br>
+		<a href="headfirst.html#chapter3">chapter 3</a><br>
+		q/blackquote/li(ol/ul/dl)<br>/code/time/strong<br>
+		<a href="headfirst.html#chapter4">chapter 4</a><br>
+		title/id/target<br>
+		<a href="headfirst.html#chapter5">chapter 5</a><br>
+		img(alt/width&height)<br>
+		<a href="headfirst.html#chapter6">chapter 6</a><br>
+		doctype/meta/css/css file/inherit/class<br>s
+		<a href="headfirst.html#chapter7">chapter 7</a><br>
+		font<br>
+		<a href="headfirst.html#chapter8">chapter 8</a><br>
+		box model/background/border/id/style sheet/media<br>
+		<a href="headfirst.html#chapter9">chapter 9</a><br>
+		div&span/pseudo-class<br>
+		<a href="headfirst.html#chapter10">chapter 10</a><br>
+		layout/positioning/css table<br>
+		<a href="headfirst.html#chapter11">chapter 11</a><br>
+		html5 element<br>
+		<a href="headfirst.html#chapter12">chapter 12</a><br>
+		element table<br>
+		<a href="headfirst.html#chapter13">chapter 13</a><br>
+		实现交互/form/input/textarea/select...
 	</p>
 </div>
 
@@ -27,12 +52,15 @@ now, i want to test what &lt;em&gt;&lt;/em&gt; is like
 now we can see that it lookes like <em>inclined letter</em> but it just
 used to emphasize text. use css to show inclined letter</p>
 
+<div id="chapter2">
 <h1>chapter 2</h1>
 <h2>hyperlink</h2>
 <p>&lt;a href=&quot;link&quot;&gt;text&lt;/a&gt;<br/>
 <a href="https://www.baidu.com">this is a hyperlink to baidu</a><br/>
 <a href="starbuzz.html">this is a hyperlink to a local file</a></p>
+</div>
 
+<div id="chapter3">
 <h1>chapter 3</h1>
 <h2>element q</h2>
 <p>&lt;q&gt;text&lt;/q&gt; means <q>text</q></p>
@@ -73,7 +101,9 @@ shaving products.</dd>
 <p>tell the browser the content is date or time</p>
 <h2>element strong</h2>
 <p>use to <strong>emphasize</strong></p>
+</div>
 
+<div id="chapter4">
 <h1>chapter 4</h1>
 <h2>add title to hyperlink</h2>
 <a href="https://www.baidu.com" 
@@ -94,7 +124,9 @@ to paragraph<p title="paragraph">this is a paragraph</p>
 <h2>link to a new window</h2>
 <p>use attribute <em>target</em>, assign value &quot;_blank&quot; to it<br>
 <a href="https://www.baidu.com" target="_blank">go to baidu</a></p>
+</div>
 
+<div id="chapter5">
 <h1>chapter 5 element img</h1>
 <h2>attribute alt</h2>
 <p>provide information when the src of img is invalid<br>
@@ -109,7 +141,9 @@ but use application to change its size and save it instead</p>
 target="_blank">
 <img src="../../../游戏/黑魂3/洋葱骑士.jpg" width="100" height="100" 
 alt="洋葱骑士"></a></p>
+</div>
 
+<div id="chapter6">
 <h1>chapter 6 html5</h1>
 <h2>doctype</h2>
 <p>&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot; 
@@ -177,8 +211,9 @@ if there are multiple values for one element, the last value
 <p><em>if there is an error in your css file, the text below the error will not work</em></p>
 <p id="checkCSS"><a href="http://jigsaw.w3.org/css-validator/" 
 target="_blank" title="find errors in .css">check your css file</a></p>
+</div>
 
-<h1>chapter7 font css</h1>
+<h1 id="chapter7">chapter7 font css</h1>
 <p>you can go to <a href="chapter7.html" target="_blank" title="chapter7">chapter7.html</a> to see details</p>
 <p><em class="term">font-size</em> to control the size of the font<br>
 <em class="term">color</em> to control color of the font<br>
@@ -186,7 +221,7 @@ target="_blank" title="find errors in .css">check your css file</a></p>
 <em class="term">font-family</em> to chagne the style of font<br>
 <em class="term">text-decoration</em> to set line</p>
 
-<h1>chapter8 css</h1>
+<h1 id="chapter8">chapter8 css</h1>
 <p>add <em class="term">line-height</em> in body</p>
 <h2>box model</h2>
 <p>in css, every element is a box including <em>content area(text and picture)</em>, <em>padding内边距</em>, <em>border边框</em> and <em>margin外边距</em></p>
@@ -621,6 +656,18 @@ cause the absolute positioning element is deleted from float, the inline element
 	</p>
 	<p>
 		required适用于所有控件（布尔属性），指示这个域是必须的
+	</p>
+</div>
+
+<div id="chapter14">
+<h1>chapter 14</h1>
+<h2>属性选择器</h2>
+	<p>
+		<code>img[height="300"] {border:black thin solid;}</code><br>
+		<code>image[alt~="flowers"] {...}</code>选择alt属性中包含flowers的所有图像
+	</p>
+	<p>
+		<code>h1+p{...}</code>选择前面有个h1的p
 	</p>
 </div>
 
