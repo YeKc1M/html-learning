@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="GBK">
+<title>会议管理</title>
+<link type="text/css" rel="stylesheet" href="MeetingManage.css">
+<script>
+    function jumpToCreate(){
+        window.location="E:\\makangyao\\study\\大二下\\项目实训\\outbreak\\web1\\WebContent\\JSP\\Login.jsp";
+        window.history.back(-1);
+    }
+</script>
+</head>
+<body>
+	<header>
+    <span id="title">OUTBREAK 多客户端云会议系统</span>
+    <span id="createMeeting"><input type="button" value="发布新的会议" onclick="jumpToCreate()"></span>
+	</header>
+	<div id="back">
+        您好，null!&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="Login.jsp">退出登陆</a>
+	</div>
+	<table>
+		<tr>
+			<th id="name">会议名称</th>
+			<th id="date">会议日期</th>
+			<th id="loc">会议地点</th>
+			<th id="content">会议内容</th>
+			<th id="users">与会者名单确认</th>
+			<th id="status">状态</th><th></th>
+		</tr>
+		<tr>
+			<td>null</td>
+			<td>null</td>
+			<td>null</td>
+			<td>null</td>
+			<td>null</td>
+			<td>null</td>
+			<td><input type="button" value="修改"></td>
+		</tr>
+	</table>
+	
+</body>
+</html>
