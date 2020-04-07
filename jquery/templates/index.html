@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>index</title>
+        <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='index.css')}}">
+        <script src="https://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+        <script>
+            $SCRIPT_ROOT={{ request.script_root|tojson|safe }};
+            $(function(){
+                $('#toggle_zone').children('button').click(function(){
+                    $(this).siblings('p').toggle();
+                });
+                $('#slide_toggle_zone').children('button').click(function(){
+                    //alert('clicked');
+                    $(this).siblings('div').slideToggle('slow');
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <h1>index</h1>
+        <div id='toggle_zone'>
+            <p>toggle text</p>
+            <button>toggle</button>
+        </div>
+        <div id='slide_toggle_zone'>
+            <button>slide toggle</button>
+            <div id='slide_toggle_div'>
+                <p>slide toggle</p>
+            </div>
+        </div>
+    </body>
+</html>
