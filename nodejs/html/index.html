@@ -1,0 +1,24 @@
+<script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+<script src="js.js"></script>
+<h1>this is index.html</h1>
+<script>
+    $(function(){
+        $('#button1').click(function(){
+            //alert('clicked!');
+            var text=$('input[name="name"]').val()
+            $.post('submit',{
+                name:text
+            },function(data){
+                //alert(data.msg);
+                $('#json').text(data.msg);
+            })
+        });
+    });
+</script>
+<p>name:<input id="name1" type="text" name="name"/><button id="button1">button</button></p>
+<p id="json"></p>
+<form action="submit" method="POST">
+    name:<input name="name"/>
+    <input type="submit" value="submit"/>
+</form>
+<button onclick="AXIOS()">AXIOS</button>

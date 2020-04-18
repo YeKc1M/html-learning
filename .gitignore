@@ -3,3 +3,5 @@ Head First HTML&CSS.pdf
 *.mp4
 *.jpg
 *.png
+*node_module*
+*.json
